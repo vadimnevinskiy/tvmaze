@@ -18,6 +18,7 @@ interface Show {
     premiered: string
     rating: Rating
     image: Image
+    summary: string
 }
 export interface ShowsState {
     shows: Show[]
