@@ -6,7 +6,7 @@ interface Image {
     medium: string
     original: string
 }
-interface Show {
+export interface Show {
     id: number
     url: string
     name: string

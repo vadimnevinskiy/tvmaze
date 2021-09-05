@@ -1,0 +1,18 @@
+.paginator span{
+    display: inline-block;
+    border: 1px solid #cccccc;
+    width: 35px;
+    padding: 5px 0px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0px 10px 0px 0px;
+}
+.paginator span.active{
+    border: 1px solid green;
+}
+
+
+.genres{
+    min-height: 100px;
+    padding:  10px 0px;
+}

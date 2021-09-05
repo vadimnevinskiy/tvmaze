@@ -30,14 +30,14 @@ export const showsReducer = (state: ShowsState = initialState, action: ShowActio
         case ShowsActionTypes.SET_PAGE_NUMBER:
             return {
                 ...state,
-                loading: true,
+                loading: false,
                 pageNumber: action.payload
             }
         case ShowsActionTypes.SET_LOCAL_PAGE_NUMBER:
             return {
                 ...state,
                 loading: false,
-                pageNumber: action.payload
+                localPageNumber: action.payload
             }
         default:
             return state

@@ -13,3 +13,9 @@ export const fetchShows = (page: number) => {
         }
     }
 }
+
+export const setLocalPageNumber = (page: number) => {
+    return (dispatch: Dispatch<ShowActions>) => {
+        dispatch({type: ShowsActionTypes.SET_LOCAL_PAGE_NUMBER, payload: page})
+    }
+}
