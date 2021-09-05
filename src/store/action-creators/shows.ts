@@ -7,7 +7,6 @@ export const fetchShows = (page: number) => {
         try {
             dispatch({type: ShowsActionTypes.FETCH_SHOWS})
             const response = await axios.get(`https://api.tvmaze.com/shows?page=${page}`)
-            console.log(response.data)
             dispatch({type: ShowsActionTypes.FETCH_SHOWS_SUCCESS, payload: response.data})
         } catch (error) {
             dispatch({type: ShowsActionTypes.FETCH_SHOWS_ERROR, payload: 'Ошибка загрузки!'})
